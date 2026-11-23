@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About</title>
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/motion.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<meta name="theme-color" content="#EAF3FD">
+<meta name="description" content="Learn about our clinic, our values and the team behind every healthy smile.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About | Smilora">
+<meta property="og:description" content="Learn about our clinic, our values and the team behind every healthy smile.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<script>document.documentElement.classList.add('js')</script>
+<style>
+body{margin:0;font-family:var(--font-primary),system-ui,sans-serif}
+a{text-decoration:none}
+.nav-link:hover{color:var(--color-two)}
+.btn:hover{filter:brightness(1.06)}
+@media (max-width: 900px){
+  .nav{flex-wrap:wrap !important;row-gap:4px !important}
+  .nav-links{order:3;width:100%;justify-content:center !important;flex-wrap:wrap !important}
+  .hero-left{padding:24px 12px 8px !important}
+  .hero-right{min-height:560px !important}
+  .overlay{flex-wrap:wrap !important}
+  .story-pad{padding:48px 20px !important}
+  .story-top{flex-direction:column !important;gap:24px !important}
+  .stats{grid-template-columns:repeat(2, minmax(0, 1fr)) !important;row-gap:32px !important}
+}
+@media (max-width: 520px){
+  .stats{grid-template-columns:1fr !important}
+}
+@media (max-width: 900px){
+  .mv-pad{padding:48px 20px !important}
+  .mv-grid{grid-template-columns:1fr !important}
+  .mv-card{min-height: 320px !important}
+  .tl-pad{padding:48px 20px !important}
+  .tl-head{flex-direction:column !important;align-items:flex-start !important;gap:20px !important}
+  .tl-grid{grid-template-columns:1fr !important;gap:32px !important}
+  .tl-img{min-height:320px !important;order:-1}
+  .team-pad{padding:48px 20px 56px !important}
+  .team-head{flex-direction:column !important;align-items:flex-start !important;gap:16px !important}
+  .team-card{width:280px !important;height:380px !important}
+}
+.team-row{scrollbar-width:thin}
+button{font-family:inherit}
+button:focus-visible{outline:2px solid var(--color-two);outline-offset:3px}
+.tour-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(300px,auto);gap:16px}
+@media (max-width:1099px){.tour-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:599px){.tour-grid{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body><div style="width: 100%; min-height: 900px; box-sizing: border-box; background: var(--color-five); padding: 10px; display: flex; flex-direction: column; font-family: var(--font-primary); color: var(--color-one)">
+
+  <!-- Header -->
+  <header class="nav" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 4px 10px 12px">
+    <a href="index.html" aria-label="Clinic Name home" style="display: flex; align-items: center; gap: 10px; min-height: 48px">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" style="flex: none"><path d="M7 3C4.5 3 3 5 3 7.5c0 2 .8 3.500 1.400 5.200.6 1.700.6 4.300 1.100 6.300.3 1.200 1.900 1.400 2.400.2.600-1.600.8-4 2.100-4s1.500 2.400 2.100 4c.5 1.200 2.100 1 2.400-.2.500-2 .5-4.600 1.100-6.300.6-1.700 1.400-3.200 1.400-5.200C21 5 19.500 3 17 3c-1.600 0-2.400.8-5 .8S8.600 3 7 3z" fill="var(--color-two)"></path></svg>
+      <span style="font-family: var(--font-secondary); font-size: 28px; font-weight: 600; letter-spacing: -0.01em; color: var(--color-two)"><span data-site="name">Clinic Name</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main" style="display: flex; align-items: center; justify-content: center; gap: 12px">
+      <a class="nav-link" href="index.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-size: 14px; font-weight: 500; color: var(--color-one)">Home</a>
+      <a class="nav-link" href="services.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-size: 14px; font-weight: 500; color: var(--color-one)">Services</a>
+      <a class="nav-link" href="about.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-size: 14px; font-weight: 700; color: var(--color-two)" aria-current="page">About</a>
+      <a class="nav-link" href="dentists.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-size: 14px; font-weight: 500; color: var(--color-one)">Dentists</a>
+      <a class="nav-link" href="contact.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-size: 14px; font-weight: 500; color: var(--color-one)">Contact</a>
+    </nav>
+    <a class="btn" href="contact.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; padding: 6px 6px 6px 22px; border-radius: 999px; background: var(--color-two); color: var(--color-five); font-size: 14px; font-weight: 600; box-sizing: border-box">
+      <span>Book a Visit</span>
+      <span style="width: 36px; height: 36px; border-radius: 999px; background: var(--color-five); display: inline-flex; align-items: center; justify-content: center">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-two)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+      </span>
+    </a>
+  </header>
+
+  <!-- Hero: text left, photo card right -->
+  
+
+  <!-- Our Story -->
+  <section style="flex: 1; display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+
+    <div class="hero-left" style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: 32px 24px 32px 12px; display: flex; flex-direction: column; justify-content: center; gap: 24px; align-items: flex-start">
+
+      <div style="display: flex; align-items: center; gap: 12px">
+        <div style="display: flex; align-items: center">
+          <span style="width: 38px; height: 38px; box-sizing: border-box; border-radius: 999px; border: 2px solid var(--color-five); background: color-mix(in srgb, var(--color-two) 50%, var(--color-five)); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-four)" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7z"></path></svg></span>
+          <span style="width: 38px; height: 38px; box-sizing: border-box; border-radius: 999px; border: 2px solid var(--color-five); background: color-mix(in srgb, var(--color-two) 25%, var(--color-five)); margin-left: -10px; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-two)" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7z"></path></svg></span>
+          <span style="width: 38px; height: 38px; box-sizing: border-box; border-radius: 999px; border: 2px solid var(--color-five); background: color-mix(in srgb, var(--color-two) 60%, var(--color-five)); margin-left: -10px; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-three)" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7z"></path></svg></span>
+        </div>
+        <div style="display: flex; flex-direction: column; line-height: 1.2">
+          <span style="font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: var(--color-one)">[00K]+</span>
+          <span style="font-size: 13px; font-weight: 400; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Happy patients</span>
+        </div>
+      </div>
+
+      <h1 style="margin: 0; max-width: 640px; font-size: clamp(40px, 5.2vw, 72px); font-weight: 500; line-height: 1.04; letter-spacing: -0.01em; color: var(--color-one)">The people behind every <span style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em; color: var(--color-two)">healthy smile</span></h1>
+
+      <a class="btn" href="dentists.html" style="display: inline-flex; align-items: center; gap: 14px; min-height: 52px; padding: 6px 6px 6px 24px; border-radius: 999px; background: var(--color-two); color: var(--color-five); font-size: 14px; font-weight: 600; box-sizing: border-box">
+        <span>Meet Our Doctors</span>
+        <span style="width: 40px; height: 40px; border-radius: 999px; background: var(--color-five); display: inline-flex; align-items: center; justify-content: center">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-two)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="hero-right" style="flex: 1 1 460px; min-width: 0; position: relative; overflow: hidden; min-height: 640px; box-sizing: border-box; border-radius: 26px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))">
+
+      <!-- Hero photo -->
+      <img src="assets/images/team-photo.jpg" alt="The clinic team standing together in the treatment room" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 22%">
+      <div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--color-four) 0%, transparent) 50%, color-mix(in srgb, var(--color-four) 60%, transparent) 100%)"></div>
+
+      <!-- Overlay cards -->
+      <div class="overlay" style="position: absolute; left: 20px; right: 20px; bottom: 20px; display: flex; gap: 12px; align-items: stretch">
+        <div style="width: 170px; flex: none; box-sizing: border-box; padding: 8px; border-radius: 18px; background: var(--color-five); display: flex; flex-direction: column; gap: 8px">
+          <img loading="lazy" decoding="async" src="assets/images/women-doctor.jpg" alt="A doctor smiling while reviewing a dental X-ray on a tablet" style="display: block; width: 100%; height: 130px; border-radius: 12px; object-fit: cover; object-position: center 22%">
+          <div style="text-align: center; font-size: 13px; font-weight: 600; color: var(--color-one); padding-bottom: 4px">Dr. [Name]</div>
+        </div>
+        <div style="flex: 1 1 220px; max-width: 300px; box-sizing: border-box; padding: 20px; border-radius: 18px; background: color-mix(in srgb, var(--color-five) 10%, transparent); border: 1px solid color-mix(in srgb, var(--color-five) 22%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-five)" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M7 3C4.500 3 3 5 3 7.500c0 2 .8 3.500 1.400 5.200.6 1.700.6 4.300 1.100 6.300.3 1.200 1.900 1.400 2.400.2.600-1.600.8-4 2.100-4s1.500 2.400 2.100 4c.5 1.200 2.100 1 2.400-.2.500-2 .5-4.600 1.100-6.300.6-1.700 1.400-3.200 1.400-5.200C21 5 19.500 3 17 3c-1.600 0-2.400.8-5 .8S8.600 3 7 3z"></path></svg>
+          <div style="font-size: 17px; font-weight: 600; margin-top: 12px; color: var(--color-five)">Modern treatments</div>
+          <div style="font-size: 13px; font-weight: 400; line-height: 1.5; margin-top: 6px; color: color-mix(in srgb, var(--color-five) 92%, transparent)">Digital diagnostics and comfortable techniques, explained in plain language.</div>
+        </div>
+      </div>
+
+    </div>
+  </section><section class="story-pad" style="box-sizing: border-box; padding: 72px 12px; display: flex; flex-direction: column; gap: 72px">
+
+    <div class="story-top" style="display: flex; align-items: flex-start; gap: 48px">
+
+      <div style="flex: none; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; box-sizing: border-box; padding: 0 20px; border-radius: 999px; background: var(--color-five); box-shadow: 0 8px 20px color-mix(in srgb, var(--color-one) 8%, transparent)">
+        <span style="display: inline-flex; gap: 2px" role="img" aria-label="Five stars">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-two)" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.8-4.900 4.600 1.300 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"></path></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-two)" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.8-4.900 4.600 1.300 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"></path></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-two)" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.8-4.900 4.600 1.300 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"></path></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-two)" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.8-4.900 4.600 1.300 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"></path></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-two)" aria-hidden="true"><path d="M12 2.500l2.900 6.100 6.600.8-4.900 4.600 1.300 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"></path></svg>
+        </span>
+        <span style="font-size: 13px; font-weight: 500; color: var(--color-one)">[0.0]/5 reviews</span>
+      </div>
+
+      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: clamp(28px, 3.4vw, 48px); font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-one)">We started with a simple belief: dental care should feel calm and personal. <span style="color: color-mix(in srgb, var(--color-one) 65%, transparent)">Today we help families and individuals keep their smiles healthy for life, with honest advice and gentle, modern treatment.</span></p>
+      </div>
+    </div>
+
+    <div class="stats" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 32px; row-gap: 32px; padding-top: 32px; border-top: 1px solid color-mix(in srgb, var(--color-one) 12%, transparent)">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 48px; font-weight: 400; letter-spacing: -0.02em; line-height: 1; color: var(--color-one)">[00]%</div>
+        <div style="max-width: 220px; font-size: 13px; font-weight: 400; line-height: 1.5; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Patient satisfaction, a reflection of the care we put into every visit.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 48px; font-weight: 400; letter-spacing: -0.02em; line-height: 1; color: var(--color-one)">[00]+</div>
+        <div style="max-width: 220px; font-size: 13px; font-weight: 400; line-height: 1.5; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Years of experience looking after our community's smiles.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 48px; font-weight: 400; letter-spacing: -0.02em; line-height: 1; color: var(--color-one)">[00K]</div>
+        <div style="max-width: 220px; font-size: 13px; font-weight: 400; line-height: 1.5; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Smiles treated, from routine checkups to advanced procedures.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 48px; font-weight: 400; letter-spacing: -0.02em; line-height: 1; color: var(--color-one)">[00]</div>
+        <div style="max-width: 220px; font-size: 13px; font-weight: 400; line-height: 1.5; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Specialists on our team, covering every stage of dental care.</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mv-pad" style="box-sizing: border-box; padding: 72px 12px 80px; display: flex; flex-direction: column; align-items: center; gap: 40px">
+
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center">
+      <h2 style="margin: 0; max-width: 900px; font-size: clamp(36px, 4.4vw, 64px); font-weight: 500; line-height: 1.06; letter-spacing: -0.01em; color: var(--color-one)">What guides <span style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em; color: var(--color-two)">every smile</span> we care for</h2>
+    </div>
+
+    <div class="mv-grid" style="width: 100%; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: stretch">
+
+      <!-- Image card -->
+      <div class="mv-card" style="position: relative; overflow: hidden; min-height: 460px; box-sizing: border-box; border-radius: 26px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))">
+        <img loading="lazy" decoding="async" src="assets/images/mission-and-vision.jpg" alt="A patient laughing with her dentist in a bright treatment room" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%">
+        <div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--color-four) 74%, transparent) 0%, color-mix(in srgb, var(--color-four) 0%, transparent) 42%, color-mix(in srgb, var(--color-four) 0%, transparent) 55%, color-mix(in srgb, var(--color-four) 72%, transparent) 100%)"></div>
+        <div style="position: absolute; left: 28px; top: 28px; right: 28px; font-size: 26px; font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-five); max-width: 260px">Making every visit feel easy</div>
+        <div style="position: absolute; left: 28px; bottom: 28px; display: flex; flex-direction: column; gap: 4px">
+          <span style="font-size: 13px; font-weight: 400; color: color-mix(in srgb, var(--color-five) 92%, transparent)">Patient satisfaction</span>
+          <span style="font-size: 30px; font-weight: 300; letter-spacing: -0.02em; line-height: 1.1; color: var(--color-five)">[00]%</span>
+        </div>
+        <svg width="128" height="128" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="position: absolute; right: 28px; bottom: 24px">
+          <path d="M7 3C4.500 3 3 5 3 7.500c0 2 .8 3.500 1.400 5.200.6 1.700.6 4.300 1.100 6.300.3 1.200 1.900 1.400 2.400.2.600-1.600.8-4 2.100-4s1.500 2.400 2.100 4c.5 1.200 2.100 1 2.400-.2.500-2 .5-4.600 1.100-6.300.6-1.700 1.400-3.200 1.400-5.200C21 5 19.500 3 17 3c-1.600 0-2.400.8-5 .8S8.600 3 7 3z" stroke="var(--color-five)" stroke-width="1.200" stroke-linejoin="round"></path>
+          <path d="M6.500 7c.4-1 1.200-1.600 2.300-1.700" stroke="var(--color-five)" stroke-width="1.200" stroke-linecap="round"></path>
+        </svg>
+      </div>
+
+      <!-- Mission card -->
+      <div class="mv-card" style="min-height: 460px; box-sizing: border-box; padding: 28px; border-radius: 26px; background: var(--color-five); display: flex; flex-direction: column; justify-content: space-between; gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 24px">
+          <span style="width: 48px; height: 48px; border-radius: 999px; background: var(--color-three); display: inline-flex; align-items: center; justify-content: center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-two)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.500" fill="var(--color-two)"></circle></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 26px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-one)">Our Mission</h3>
+        </div>
+        <p style="margin: 0; font-size: 15px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 78%, transparent)">To make dental care calm, clear and personal, so every patient leaves with a healthier smile and the confidence to look after it. We explain each step, listen first and treat with care.</p>
+      </div>
+
+      <!-- Vision card -->
+      <div class="mv-card" style="min-height: 460px; box-sizing: border-box; padding: 28px; border-radius: 26px; background: var(--color-five); display: flex; flex-direction: column; justify-content: space-between; gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 24px">
+          <span style="width: 48px; height: 48px; border-radius: 999px; background: var(--color-three); display: inline-flex; align-items: center; justify-content: center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-two)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.500-7 10-7 10 7 10 7-3.500 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 26px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-one)">Our Vision</h3>
+        </div>
+        <p style="margin: 0; font-size: 15px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 78%, transparent)">To be the clinic our community trusts for life, known for gentle modern treatment, honest advice and care that feels like family, for every generation we welcome.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Milestones / Timeline -->
+  <section class="tl-pad" style="box-sizing: border-box; padding: 72px 12px 88px; display: flex; flex-direction: column; gap: 56px">
+
+    <div class="tl-head" style="display: flex; align-items: flex-end; justify-content: space-between; gap: 32px">
+      <h2 style="margin: 0; max-width: 640px; font-size: clamp(36px, 4.4vw, 64px); font-weight: 500; line-height: 1.06; letter-spacing: -0.01em; color: var(--color-one)">Our journey, <span style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em; color: var(--color-two)">milestone by milestone</span></h2>
+    </div>
+
+    <div class="tl-grid" style="display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr); gap: 48px; align-items: stretch">
+
+      <!-- Steps -->
+      <div style="display: flex; flex-direction: column">
+
+        <div style="display: flex; gap: 20px">
+          <div style="display: flex; flex-direction: column; align-items: center; flex: none">
+            <span style="width: 40px; height: 40px; border-radius: 8px; background: var(--color-two); color: var(--color-five); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center">1</span>
+            <span style="flex: 1; width: 2px; margin-top: 8px; background: var(--color-two)"></span>
+          </div>
+          <div style="padding-bottom: 36px; display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 13px; font-weight: 600; color: var(--color-two)">[Year]</span>
+            <h3 style="margin: 0; font-size: 22px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-one)">Where it began</h3>
+            <p style="margin: 0; max-width: 360px; font-size: 14px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 78%, transparent)">We opened our doors with a simple goal: dental care that feels calm, honest and personal for every patient.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 20px">
+          <div style="display: flex; flex-direction: column; align-items: center; flex: none">
+            <span style="width: 40px; height: 40px; border-radius: 8px; background: var(--color-five); color: var(--color-one); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center">2</span>
+            <span style="flex: 1; width: 2px; margin-top: 8px; background: color-mix(in srgb, var(--color-one) 15%, transparent)"></span>
+          </div>
+          <div style="padding-bottom: 36px; display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 13px; font-weight: 600; color: var(--color-two)">[Year]</span>
+            <h3 style="margin: 0; font-size: 22px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-one)">Growing our team</h3>
+            <p style="margin: 0; max-width: 360px; font-size: 14px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 78%, transparent)">New dentists, hygienists and specialists joined us, so more families could get every kind of care in one place.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 20px">
+          <div style="display: flex; flex-direction: column; align-items: center; flex: none">
+            <span style="width: 40px; height: 40px; border-radius: 8px; background: var(--color-five); color: var(--color-one); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center">3</span>
+            <span style="flex: 1; width: 2px; margin-top: 8px; background: color-mix(in srgb, var(--color-one) 15%, transparent)"></span>
+          </div>
+          <div style="padding-bottom: 36px; display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 13px; font-weight: 600; color: var(--color-two)">[Year]</span>
+            <h3 style="margin: 0; font-size: 22px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-one)">Adopting modern technology</h3>
+            <p style="margin: 0; max-width: 360px; font-size: 14px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Digital diagnostics and comfortable techniques made treatment faster, clearer and easier to understand.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 20px">
+          <div style="display: flex; flex-direction: column; align-items: center; flex: none">
+            <span style="width: 40px; height: 40px; border-radius: 8px; background: var(--color-five); color: var(--color-one); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center">4</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 13px; font-weight: 600; color: var(--color-two)">[Year]</span>
+            <h3 style="margin: 0; font-size: 22px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--color-one)">Caring for our community</h3>
+            <p style="margin: 0; max-width: 360px; font-size: 14px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Today we keep growing with the people we serve, with checkups, outreach and care for every generation.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Image -->
+      <div class="tl-img" style="position: relative; overflow: hidden; min-height: 540px; box-sizing: border-box; border-radius: 20px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))">
+        <img loading="lazy" decoding="async" src="assets/images/team-at-the-clinic-reception.jpg" alt="The clinic team laughing together at the reception" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="team-pad" style="box-sizing: border-box; padding: 72px 12px 88px; display: flex; flex-direction: column; gap: 40px; min-width: 0">
+
+    <div class="team-head" style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+      <h2 style="margin: 0; font-size: clamp(36px, 4.4vw, 64px); font-weight: 500; line-height: 1.06; letter-spacing: -0.01em; color: var(--color-one)">Meet our <span style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em; color: var(--color-two)">dental team</span></h2>
+    </div>
+
+    <div class="team-row" style="display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 8px">
+
+      <div class="team-card" style="position: relative; flex: none; width: 340px; height: 440px; box-sizing: border-box; border-radius: 20px; overflow: hidden; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); scroll-snap-align: start">
+        <img loading="lazy" decoding="async" src="assets/images/lead-dentist.jpg" alt="Portrait of the lead dentist in a white coat" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top">
+        <div style="position: absolute; left: 12px; right: 12px; bottom: 12px; box-sizing: border-box; padding: 14px 16px; border-radius: 14px; background: var(--color-five); display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+            <span style="font-size: 15px; font-weight: 600; color: var(--color-one)">Dr. [Name]</span>
+            <span style="font-size: 13px; font-weight: 400; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Lead Dentist</span>
+          </div>
+          <a href="dentists.html" aria-label="View Dr. [Name] profile" style="flex: none; width: 44px; height: 44px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-one) 18%, transparent); display: inline-flex; align-items: center; justify-content: center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-one)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card" style="position: relative; flex: none; width: 340px; height: 440px; box-sizing: border-box; border-radius: 20px; overflow: hidden; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); scroll-snap-align: start">
+        <img loading="lazy" decoding="async" src="assets/images/orthodontist.jpg" alt="Portrait of the orthodontist holding a clear aligner" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top">
+        <div style="position: absolute; left: 12px; right: 12px; bottom: 12px; box-sizing: border-box; padding: 14px 16px; border-radius: 14px; background: var(--color-five); display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+            <span style="font-size: 15px; font-weight: 600; color: var(--color-one)">Dr. [Name]</span>
+            <span style="font-size: 13px; font-weight: 400; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Orthodontist</span>
+          </div>
+          <a href="dentists.html" aria-label="View Dr. [Name] profile" style="flex: none; width: 44px; height: 44px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-one) 18%, transparent); display: inline-flex; align-items: center; justify-content: center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-one)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card" style="position: relative; flex: none; width: 340px; height: 440px; box-sizing: border-box; border-radius: 20px; overflow: hidden; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); scroll-snap-align: start">
+        <img loading="lazy" decoding="async" src="assets/images/dental-hygienist.jpg" alt="Portrait of the dental hygienist in blue scrubs" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top">
+        <div style="position: absolute; left: 12px; right: 12px; bottom: 12px; box-sizing: border-box; padding: 14px 16px; border-radius: 14px; background: var(--color-five); display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+            <span style="font-size: 15px; font-weight: 600; color: var(--color-one)">[Name]</span>
+            <span style="font-size: 13px; font-weight: 400; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Dental Hygienist</span>
+          </div>
+          <a href="dentists.html" aria-label="View [Name] profile" style="flex: none; width: 44px; height: 44px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-one) 18%, transparent); display: inline-flex; align-items: center; justify-content: center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-one)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card" style="position: relative; flex: none; width: 340px; height: 440px; box-sizing: border-box; border-radius: 20px; overflow: hidden; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); scroll-snap-align: start">
+        <img loading="lazy" decoding="async" src="assets/images/patient-coordinator.jpg" alt="Portrait of the patient coordinator in a blue blazer" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top">
+        <div style="position: absolute; left: 12px; right: 12px; bottom: 12px; box-sizing: border-box; padding: 14px 16px; border-radius: 14px; background: var(--color-five); display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+            <span style="font-size: 15px; font-weight: 600; color: var(--color-one)">[Name]</span>
+            <span style="font-size: 13px; font-weight: 400; color: color-mix(in srgb, var(--color-one) 78%, transparent)">Patient Coordinator</span>
+          </div>
+          <a href="dentists.html" aria-label="View [Name] profile" style="flex: none; width: 44px; height: 44px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-one) 18%, transparent); display: inline-flex; align-items: center; justify-content: center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-one)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div style="display: flex; flex-direction: column; gap: 10px">
+
+<!-- Testimonials -->
+<section style="box-sizing: border-box; background: var(--color-five); border-radius: 26px; padding: 48px 24px; display: flex; flex-direction: column; gap: 32px; overflow: hidden">
+
+<h2 style="margin: 0 auto; max-width: 760px; text-align: center; font-size: clamp(32px, 3.4vw, 48px); font-weight: 500; line-height: 1.04; letter-spacing: -0.01em; color: var(--color-one)">Voices of patients who value <span style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em; color: var(--color-two)">quality over compromise</span>.</h2>
+
+<div style="position: relative; height: 360px; margin: 0 -24px; overflow: hidden">
+
+<article data-t-card style="position: absolute; top: 24px; left: 50%; margin-left: -180px; box-sizing: border-box; width: 360px; height: 252px; padding: 22px; border-radius: 20px; background: var(--color-three); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.5s ease, opacity 0.5s ease; transform: translateX(0px) translateY(0px) rotate(0deg); opacity: 1; visibility: visible; z-index: 10">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<span style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 56px; height: 56px; border-radius: 999px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))" aria-hidden="true">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="color-mix(in srgb, var(--color-five) 55%, transparent)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+</span>
+<div style="text-align: right; min-width: 0">
+<div style="font-size: 17px; font-weight: 600; color: var(--color-one)">[Patient name]</div>
+<div style="margin-top: 2px; font-size: 13px; font-weight: 400; line-height: 1.4; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">[Occupation] · [Age]</div>
+</div>
+</div>
+<div>
+<span style="display: block; font-family: var(--font-tertiary); font-style: italic; font-size: 44px; line-height: 0.7; color: var(--color-two)" aria-hidden="true">“</span>
+<p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--color-one)">[Add a real patient review here, in their own words.]</p>
+</div>
+<div style="text-align: right; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">Treatment: Teeth Whitening</div>
+</article>
+
+<article data-t-card style="position: absolute; top: 24px; left: 50%; margin-left: -180px; box-sizing: border-box; width: 360px; height: 252px; padding: 22px; border-radius: 20px; background: var(--color-three); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.5s ease, opacity 0.5s ease; transform: translateX(400px) translateY(16px) rotate(6deg); opacity: 1; visibility: visible; z-index: 9">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<span style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 56px; height: 56px; border-radius: 999px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))" aria-hidden="true">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="color-mix(in srgb, var(--color-five) 55%, transparent)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+</span>
+<div style="text-align: right; min-width: 0">
+<div style="font-size: 17px; font-weight: 600; color: var(--color-one)">[Patient name]</div>
+<div style="margin-top: 2px; font-size: 13px; font-weight: 400; line-height: 1.4; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">[Occupation] · [Age]</div>
+</div>
+</div>
+<div>
+<span style="display: block; font-family: var(--font-tertiary); font-style: italic; font-size: 44px; line-height: 0.7; color: var(--color-two)" aria-hidden="true">“</span>
+<p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--color-one)">[Add a real patient review here, in their own words.]</p>
+</div>
+<div style="text-align: right; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">Treatment: Clear Aligners</div>
+</article>
+
+<article data-t-card style="position: absolute; top: 24px; left: 50%; margin-left: -180px; box-sizing: border-box; width: 360px; height: 252px; padding: 22px; border-radius: 20px; background: var(--color-three); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.5s ease, opacity 0.5s ease; transform: translateX(800px) translateY(64px) rotate(12deg); opacity: 1; visibility: visible; z-index: 8">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<span style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 56px; height: 56px; border-radius: 999px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))" aria-hidden="true">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="color-mix(in srgb, var(--color-five) 55%, transparent)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+</span>
+<div style="text-align: right; min-width: 0">
+<div style="font-size: 17px; font-weight: 600; color: var(--color-one)">[Patient name]</div>
+<div style="margin-top: 2px; font-size: 13px; font-weight: 400; line-height: 1.4; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">[Occupation] · [Age]</div>
+</div>
+</div>
+<div>
+<span style="display: block; font-family: var(--font-tertiary); font-style: italic; font-size: 44px; line-height: 0.7; color: var(--color-two)" aria-hidden="true">“</span>
+<p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--color-one)">[Add a real patient review here, in their own words.]</p>
+</div>
+<div style="text-align: right; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">Treatment: Dental Implants</div>
+</article>
+
+<article data-t-card style="position: absolute; top: 24px; left: 50%; margin-left: -180px; box-sizing: border-box; width: 360px; height: 252px; padding: 22px; border-radius: 20px; background: var(--color-three); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.5s ease, opacity 0.5s ease; transform: translateX(1200px) translateY(144px) rotate(18deg); opacity: 0; visibility: hidden; z-index: 7">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<span style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 56px; height: 56px; border-radius: 999px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))" aria-hidden="true">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="color-mix(in srgb, var(--color-five) 55%, transparent)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+</span>
+<div style="text-align: right; min-width: 0">
+<div style="font-size: 17px; font-weight: 600; color: var(--color-one)">[Patient name]</div>
+<div style="margin-top: 2px; font-size: 13px; font-weight: 400; line-height: 1.4; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">[Occupation] · [Age]</div>
+</div>
+</div>
+<div>
+<span style="display: block; font-family: var(--font-tertiary); font-style: italic; font-size: 44px; line-height: 0.7; color: var(--color-two)" aria-hidden="true">“</span>
+<p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--color-one)">[Add a real patient review here, in their own words.]</p>
+</div>
+<div style="text-align: right; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">Treatment: Kids’ Dentistry</div>
+</article>
+
+<article data-t-card style="position: absolute; top: 24px; left: 50%; margin-left: -180px; box-sizing: border-box; width: 360px; height: 252px; padding: 22px; border-radius: 20px; background: var(--color-three); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.5s ease, opacity 0.5s ease; transform: translateX(1600px) translateY(256px) rotate(24deg); opacity: 0; visibility: hidden; z-index: 6">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<span style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 56px; height: 56px; border-radius: 999px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five))" aria-hidden="true">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="color-mix(in srgb, var(--color-five) 55%, transparent)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+</span>
+<div style="text-align: right; min-width: 0">
+<div style="font-size: 17px; font-weight: 600; color: var(--color-one)">[Patient name]</div>
+<div style="margin-top: 2px; font-size: 13px; font-weight: 400; line-height: 1.4; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">[Occupation] · [Age]</div>
+</div>
+</div>
+<div>
+<span style="display: block; font-family: var(--font-tertiary); font-style: italic; font-size: 44px; line-height: 0.7; color: var(--color-two)" aria-hidden="true">“</span>
+<p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--color-one)">[Add a real patient review here, in their own words.]</p>
+</div>
+<div style="text-align: right; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">Treatment: Smile Makeover</div>
+</article>
+
+</div>
+
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<button type="submit" aria-label="Previous testimonial" data-t-prev disabled style="box-sizing: border-box; width: 44px; height: 44px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-one) 18%, transparent); background: var(--color-five); color: var(--color-one); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; opacity: 0.4">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+</button>
+<div style="flex: 1 1 auto; max-width: 280px; height: 3px; border-radius: 999px; background: color-mix(in srgb, var(--color-one) 12%, transparent); overflow: hidden" aria-hidden="true">
+<div style="height: 100%; border-radius: 999px; background: var(--color-two); transition: width 0.4s ease; width: 20%" data-t-progress></div>
+</div>
+<button type="submit" aria-label="Next testimonial" data-t-next style="box-sizing: border-box; width: 44px; height: 44px; border-radius: 999px; border: 0; background: var(--color-two); color: var(--color-five); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; opacity: 1">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</button>
+</div>
+
+</section>
+
+<!-- Clinic tour -->
+<section style="box-sizing: border-box; background: var(--color-five); border-radius: 26px; padding: 48px 24px; display: flex; flex-direction: column; gap: 40px">
+
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; max-width: 640px; font-size: clamp(32px, 3.4vw, 48px); font-weight: 500; line-height: 1.04; letter-spacing: -0.01em; color: var(--color-one)">Modern technology, <span style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em; color: var(--color-two)">a clinic tour</span> in photos.</h2>
+</div>
+
+<div class="tour-grid">
+
+<figure style="position: relative; margin: 0; min-height: 300px; border-radius: 20px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); overflow: hidden; display: flex; align-items: center; justify-content: center">
+<img loading="lazy" decoding="async" src="assets/images/waiting-area.jpg" alt="Bright clinic waiting area with armchairs and a large window" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover">
+<figcaption style="position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; height: 32px; padding: 0 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-four) 88%, transparent); color: var(--color-five); font-size: 13px; font-weight: 600">Waiting area</figcaption>
+</figure>
+
+<article style="box-sizing: border-box; min-height: 300px; padding: 28px; border-radius: 20px; background: var(--color-three); display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+<h3 style="margin: 0; max-width: 200px; font-size: 22px; font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; color: var(--color-one)">Digital Imaging</h3>
+<div>
+<p style="margin: 0 0 4px; font-size: 13px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">Digital X-rays and intraoral scans help us show you exactly what we see and explain every step of your plan.</p>
+<a href="services.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; font-weight: 600; color: var(--color-one); text-decoration: underline; text-underline-offset: 4px">Learn more</a>
+</div>
+</article>
+
+<figure style="position: relative; margin: 0; min-height: 300px; border-radius: 20px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); overflow: hidden; display: flex; align-items: center; justify-content: center">
+<img loading="lazy" decoding="async" src="assets/images/treatment-room.jpg" alt="Treatment room with a blue dental chair and wall-mounted screen" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover">
+<figcaption style="position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; height: 32px; padding: 0 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-four) 88%, transparent); color: var(--color-five); font-size: 13px; font-weight: 600">Treatment room</figcaption>
+</figure>
+
+<article style="box-sizing: border-box; min-height: 300px; padding: 28px; border-radius: 20px; background: var(--color-one); display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+<h3 style="margin: 0; max-width: 200px; font-size: 22px; font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; color: var(--color-five)">Modern Equipment</h3>
+<div>
+<p style="margin: 0 0 4px; font-size: 13px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-five) 85%, transparent)">Up-to-date instruments and chairs for precise, minimally invasive and comfortable treatment.</p>
+<a href="services.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; font-weight: 600; color: var(--color-five); text-decoration: underline; text-underline-offset: 4px">Learn more</a>
+</div>
+</article>
+
+<article style="box-sizing: border-box; min-height: 300px; padding: 28px; border-radius: 20px; background: var(--color-two); display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+<h3 style="margin: 0; max-width: 200px; font-size: 22px; font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; color: var(--color-five)">Clean &amp; Hygienic</h3>
+<div>
+<p style="margin: 0 0 4px; font-size: 13px; font-weight: 400; line-height: 1.6; color: var(--color-five)">Carefully maintained treatment rooms and instruments, so you can relax knowing everything is spotless.</p>
+<a href="services.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; font-weight: 600; color: var(--color-five); text-decoration: underline; text-underline-offset: 4px">Learn more</a>
+</div>
+</article>
+
+<figure style="position: relative; margin: 0; min-height: 300px; border-radius: 20px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); overflow: hidden; display: flex; align-items: center; justify-content: center">
+<img loading="lazy" decoding="async" src="assets/images/sterilization-area.jpg" alt="Staff member preparing sterilized instruments beside the autoclave" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover">
+<figcaption style="position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; height: 32px; padding: 0 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-four) 88%, transparent); color: var(--color-five); font-size: 13px; font-weight: 600">Sterilization area</figcaption>
+</figure>
+
+<article style="box-sizing: border-box; min-height: 300px; padding: 28px; border-radius: 20px; background: var(--color-three); display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+<h3 style="margin: 0; max-width: 200px; font-size: 22px; font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; color: var(--color-one)">A Calm Waiting Area</h3>
+<div>
+<p style="margin: 0 0 4px; font-size: 13px; font-weight: 400; line-height: 1.6; color: color-mix(in srgb, var(--color-one) 81%, var(--color-five))">Bright, quiet seating designed to put you at ease before your appointment even begins.</p>
+<a href="services.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; font-weight: 600; color: var(--color-one); text-decoration: underline; text-underline-offset: 4px">Learn more</a>
+</div>
+</article>
+
+<figure style="position: relative; margin: 0; min-height: 300px; border-radius: 20px; background: color-mix(in srgb, var(--color-one) 66%, var(--color-five)); overflow: hidden; display: flex; align-items: center; justify-content: center">
+<img loading="lazy" decoding="async" src="assets/images/imaging-equipment.jpg" alt="Panoramic X-ray unit with a screen showing a dental scan" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover">
+<figcaption style="position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; height: 32px; padding: 0 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-four) 88%, transparent); color: var(--color-five); font-size: 13px; font-weight: 600">Imaging equipment</figcaption>
+</figure>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+<section style="position: relative; box-sizing: border-box; min-height: 380px; border-radius: 26px; padding: 64px 24px; overflow: hidden; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(180deg, var(--color-two) 0%, var(--color-four) 100%)">
+
+<svg viewBox="0 0 640 380" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" style="position: absolute; top: 0; right: 0; width: 58%; height: 100%; pointer-events: none">
+<defs>
+<linearGradient id="ctaPetalA" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="var(--color-five)" stop-opacity="0.62"></stop>
+<stop offset="1" stop-color="var(--color-five)" stop-opacity="0.14"></stop>
+</linearGradient>
+<linearGradient id="ctaPetalB" x1="1" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="var(--color-five)" stop-opacity="0.5"></stop>
+<stop offset="1" stop-color="var(--color-five)" stop-opacity="0.12"></stop>
+</linearGradient>
+<filter id="ctaBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="7"></feGaussianBlur></filter>
+</defs>
+<path d="M190 392 C 240 250, 400 180, 560 205 C 520 345, 340 420, 190 392 Z" fill="url(#ctaPetalA)"></path>
+<path d="M360 80 C 430 -10, 560 -40, 660 -10 C 620 110, 480 150, 360 80 Z" fill="url(#ctaPetalB)" filter="url(#ctaBlur)"></path>
+<path d="M70 410 C 130 340, 250 320, 350 345 C 330 435, 180 450, 70 410 Z" fill="url(#ctaPetalB)"></path>
+</svg>
+
+<div style="position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; max-width: 560px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 48px); font-weight: 500; line-height: 1.04; letter-spacing: -0.01em; color: var(--color-five)">Ready for a <span style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em; color: var(--color-five)">healthier smile</span>?</h2>
+<button type="submit" style="box-sizing: border-box; display: inline-flex; align-items: center; gap: 14px; min-height: 52px; padding: 6px 6px 6px 24px; margin-top: 8px; border: 0; border-radius: 999px; background: var(--color-five); color: var(--color-one); font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: 0 8px 20px color-mix(in srgb, var(--color-one) 25%, transparent)">
+<span>Book a Checkup</span>
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 999px; background: var(--color-two); color: var(--color-five)">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+</span>
+</button>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 32px; box-sizing: border-box; min-height: 540px; padding: 32px 24px 24px; border-radius: 26px; color: var(--color-five); background: linear-gradient(180deg, var(--color-two) 0%, var(--color-four) 100%)">
+
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a href="index.html" style="display: inline-flex; align-items: center; align-self: flex-start; gap: 10px; min-height: 44px; font-family: var(--font-secondary); font-weight: 600; font-size: 28px; letter-spacing: -0.01em; color: var(--color-five)">
+<svg width="24" height="30" viewBox="0 0 24 30" aria-hidden="true"><path d="M6 3 C3 3 2 6 2 9 C2 13 4 15 5 19 C5.5 22 6.5 27 8.5 27 C10.5 27 10.5 21 12 21 C13.5 21 13.5 27 15.5 27 C17.5 27 18.5 22 19 19 C20 15 22 13 22 9 C22 6 21 3 18 3 C15.5 3 14 4.5 12 4.5 C10 4.5 8.5 3 6 3 Z" fill="var(--color-five)"></path></svg>
+<span data-site="name">Clinic Name</span>
+</a>
+<div style="max-width: 260px; font-size: 13px; line-height: 1.5; color: color-mix(in srgb, var(--color-five) 92%, transparent)"><span data-site="footerText">Gentle, modern dental care for the whole family.</span></div>
+</div>
+<a href="#top" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 14px; box-sizing: border-box; min-height: 52px; padding: 6px 6px 6px 24px; border-radius: 999px; background: color-mix(in srgb, var(--color-five) 10%, transparent); border: 1px solid color-mix(in srgb, var(--color-five) 22%, transparent); backdrop-filter: blur(10px); color: var(--color-five); font-size: 14px; font-weight: 600">
+Back to top
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 999px; background: var(--color-five)">
+<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13 V3 M3.5 7.5 L8 3 L12.5 7.5" stroke="var(--color-two)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+</span>
+</a>
+</div>
+
+<div style="flex: 2 1 380px; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; gap: 0 64px">
+<div style="display: flex; flex-direction: column">
+<a href="index.html" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)">Home</a>
+<a href="services.html" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)">Services</a>
+<a href="about.html" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)">About</a>
+<a href="dentists.html" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)">Dentists</a>
+<a href="contact.html" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)">Contact</a>
+</div>
+<div style="display: flex; flex-direction: column">
+<a href="#" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)" data-social="instagram">Instagram</a>
+<a href="#" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)" data-social="facebook">Facebook</a>
+<a href="#" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)" data-social="linkedin">LinkedIn</a>
+<a href="#" style="padding: 10px 0; font-size: 15px; font-weight: 500; color: var(--color-five)" data-social="youtube">YouTube</a>
+</div>
+</div>
+<div>
+<h2 style="margin: 0 0 20px; font-size: 30px; line-height: 1.2; font-weight: 500; letter-spacing: -0.01em">Get dental tips<br><em style="font-family: var(--font-tertiary); font-style: italic; font-weight: 400; font-size: 1.12em; letter-spacing: -0.01em">in your inbox</em></h2>
+<form data-form style="display: flex; align-items: center; box-sizing: border-box; max-width: 380px; padding: 6px 6px 6px 20px; border-radius: 999px; background: var(--color-five)">
+<label for="footer-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap">Email address</label>
+<input id="footer-email" type="email" placeholder="name@example.com" style="flex: 1; min-width: 0; min-height: 44px; border: 0; background: transparent; font-family: var(--font-primary); font-size: 15px; color: var(--color-one)">
+<button type="submit" aria-label="Subscribe" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 999px; background: var(--color-two); cursor: pointer">
+<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8 H13 M9 4 L13 8 L9 12" stroke="var(--color-five)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+</button>
+</form>
+</div>
+</div>
+
+<div style="flex: 1 1 220px; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
+<div style="display: flex; flex-direction: column">
+<a href="legal.html#terms" style="padding: 10px 0; font-size: 14px; color: color-mix(in srgb, var(--color-five) 92%, transparent)">Terms &amp; Conditions</a>
+<a href="legal.html#privacy" style="padding: 10px 0; font-size: 14px; color: color-mix(in srgb, var(--color-five) 92%, transparent)">Privacy Policy</a>
+<a href="legal.html#cookies" style="padding: 10px 0; font-size: 14px; color: color-mix(in srgb, var(--color-five) 92%, transparent)">Cookie Policy</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<a href="mailto:hello@yourclinic.com" style="font-size: 15px; font-weight: 600; color: var(--color-five)"><span data-site="email">[hello@yourclinic.com]</span></a>
+<div style="font-size: 13px; line-height: 1.5; color: color-mix(in srgb, var(--color-five) 92%, transparent)"><span data-site="name">Clinic Name</span><br>2026 © All rights reserved</div>
+</div>
+</div>
+
+</footer>
+
+  </div>
+</div>
+<script src="assets/js/site.config.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script src="assets/js/motion.js"></script>
+</body>
+</html>

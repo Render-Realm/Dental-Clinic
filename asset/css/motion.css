@@ -1,0 +1,80 @@
+/* MOTION.CSS — saari animations/hover effects. Colors sirf theme variables se. Band karna ho to pages se is file ka link hata dein. */
+:root{--m-ease:cubic-bezier(.2,.7,.2,1);--m-glow:color-mix(in srgb,var(--color-four) 28%,transparent)}
+
+@media (prefers-reduced-motion:no-preference){
+
+/* Page enter / leave */
+body{animation:m-page-in .7s var(--m-ease) both}
+body.m-leaving{opacity:0;transition:opacity .28s ease}
+@keyframes m-page-in{from{opacity:0}to{opacity:1}}
+
+/* Scroll progress bar */
+.m-progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:9999;background:var(--color-two);transform:scaleX(0);transform-origin:left;pointer-events:none}
+
+/* Nav entrance */
+.m-nav-in{animation:m-nav-in .8s var(--m-ease) both}
+@keyframes m-nav-in{from{opacity:0;translate:0 -18px}to{opacity:1;translate:0 0}}
+
+/* Text reveal: words slide up out of a mask */
+.m-w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .06em .14em;margin:0 -.06em -.14em}
+.m-wi{display:inline-block;transform:translateY(112%) rotate(3deg);transform-origin:left bottom;transition:transform .9s var(--m-ease);transition-delay:calc(var(--i,0) * 70ms + 80ms)}
+.m-split.m-in .m-wi{transform:none}
+
+/* Element reveal (translate/opacity so hover can keep using transform) */
+.js .m-reveal{opacity:0;translate:0 36px;transition:opacity .9s var(--m-ease),translate .9s var(--m-ease);transition-delay:var(--d,0ms)}
+.js .m-reveal.m-in{opacity:1;translate:0 0}
+
+/* Floating glass cards */
+.m-float{animation:m-float 6s ease-in-out infinite;animation-delay:var(--fd,0s)}
+@keyframes m-float{0%,100%{translate:0 0}50%{translate:0 -10px}}
+
+/* Slow image drift on hero photos */
+.m-kb{animation:m-kb 20s ease-in-out infinite alternate}
+@keyframes m-kb{from{transform:scale(1)}to{transform:scale(1.07)}}
+
+/* FAQ answer */
+[data-faq-answer]:not([hidden]){animation:m-faq .45s var(--m-ease)}
+@keyframes m-faq{from{opacity:0;translate:0 -8px}to{opacity:1;translate:0 0}}
+
+/* Buttons */
+.m-btn{transition:transform .35s var(--m-ease),box-shadow .35s var(--m-ease),filter .3s,translate .25s ease-out}
+.m-btn:hover{filter:brightness(1.06)}
+.m-btn:active{transform:scale(.97)}
+.m-btn svg{transition:transform .35s var(--m-ease)}
+.m-btn:hover svg{transform:translate(2px,-2px)}
+.m-btn>span:last-child{transition:transform .35s var(--m-ease)}
+.m-btn:hover>span:last-child{transform:scale(1.1)}
+
+/* Nav link underline */
+.m-link{position:relative}
+.m-link::after{content:"";position:absolute;left:14px;right:14px;bottom:8px;height:2px;border-radius:2px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--m-ease)}
+.m-link:hover::after,.m-link[aria-current="page"]::after{transform:scaleX(1);transform-origin:left}
+
+/* Cards */
+article>img,.team-card img,.tour-grid img{transition:transform 1s var(--m-ease)}
+article:hover>img,.team-card:hover img,.tour-grid>*:hover img{transform:scale(1.08)}
+.tour-grid>*{overflow:hidden}
+[data-t-card]{transition:transform .5s ease,opacity .5s ease,box-shadow .4s}
+
+/* Footer & inline links */
+footer a{transition:translate .3s var(--m-ease),opacity .3s}
+footer a:hover{translate:4px 0;opacity:.85}
+
+/* Form fields */
+input,textarea,select{transition:box-shadow .3s,transform .3s var(--m-ease)}
+input:focus,textarea:focus,select:focus{box-shadow:0 0 0 3px var(--m-glow)}
+}
+
+/* Card reveal: text reveal jaisa mask wipe (neeche se khulta hai), image andar settle hoti hai */
+@media (prefers-reduced-motion:no-preference){
+.js .m-mask{clip-path:inset(100% 0 0 0 round var(--r,20px));transition:clip-path 1.2s var(--m-ease);transition-delay:var(--d,0ms)}
+.js .m-mask.m-in{clip-path:inset(0 0 0 0 round var(--r,20px))}
+.js .m-mask.m-done{clip-path:none;transition:none}
+.js .m-mask img{scale:1.2;transition:scale 1.6s var(--m-ease),transform 1s var(--m-ease);transition-delay:var(--d,0ms),0s}
+.js .m-mask.m-in img{scale:1}
+}
+
+/* GSAP ScrollSmoother */
+html.m-smooth{scroll-behavior:auto}
+#smooth-wrapper{position:fixed;inset:0;overflow:hidden}
+#smooth-content{overflow:visible;width:100%}

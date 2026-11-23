@@ -1,0 +1,10 @@
+/* BASE.CSS — sirf global basics. Page-specific styling har page ke <style> mein hai. Colors/fonts yahan na likhein, sirf var(--...) */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-primary);color:var(--color-one);background:var(--color-five)}
+img{max-width:100%}
+button{font-family:inherit}
+a[aria-current="page"]{font-weight:700 !important}
+:focus-visible{outline:2px solid var(--color-two);outline-offset:3px}
+.form-note{margin:12px 0 0;font-size:14px;font-weight:600}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto !important}}

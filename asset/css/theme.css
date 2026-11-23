@@ -1,0 +1,21 @@
+/* =========================================================
+   THEME.CSS — Fonts aur Colors SIRF YAHAN change karein.
+   Poori website (5 pages) automatically update ho jayegi.
+   ========================================================= */
+
+/* FONTS: naya font lena ho to yahan Google Fonts ka link badlein */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Fraunces:wght@600&family=Instrument+Serif:ital@1&display=swap');
+
+:root {
+  /* Fonts */
+  --font-primary:   'Manrope', system-ui, sans-serif; /* Headings, body text, buttons */
+  --font-secondary: 'Fraunces', serif;                /* Logo / brand name */
+  --font-tertiary:  'Instrument Serif', serif;        /* Italic highlight words in headings (optional) */
+
+  /* Colors */
+  --color-one:   #1F2A44; /* Dark ink: text, headings (greys is se bante hain) */
+  --color-two:   #2668BF; /* Brand: buttons, links, accents */
+  --color-three: #EAF3FD; /* Soft tint: section/card backgrounds */
+  --color-four:  #17469A; /* Deep brand: footer, overlays */
+  --color-five:  #FFFFFF; /* Light: page background, text on dark */
+}
